@@ -186,6 +186,7 @@ const modifiers = computed(() => {
 
 .not-purchased:not(.none) {
   opacity: 0.5;
+  border-style: dotted;
 }
 
 .portal {
