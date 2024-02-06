@@ -13,6 +13,7 @@ body {
   background: white;
   display: flex;
   font-family: 'Outfit', sans-serif;
+  fill: black;
 }
 
 button, input, select, option {

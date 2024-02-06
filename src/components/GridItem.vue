@@ -245,7 +245,7 @@ const modifiers = computed(() => {
 .tenos,
 .wendarr {
   border: 4px solid var(--color);
-  background: color-mix(in srgb, var(--color), white 90%);
+  background: color-mix(in srgb, var(--color), transparent 90%);
 }
 
 .idona {
