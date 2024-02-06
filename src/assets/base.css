@@ -19,3 +19,8 @@ body {
 button, input, select, option {
   font-family: inherit;
 }
+
+.pan-zoom {
+  height: min-content;
+  width: min-content;
+}
