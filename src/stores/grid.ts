@@ -95,14 +95,14 @@ export const useGridStore = defineStore('grid', {
       )
       const toRoom = {
         ...adjacent,
-        purchased: !!adjacentConnections?.length,
+        purchased: !!adjacentConnections?.length || adjacent.style === 'portal',
         connections: adjacentConnections
       }
 
       const fromConnections = item.connections?.filter((connection) => connection.id !== toRoom.id)
       const fromRoom = {
         ...item,
-        purchased: !!fromConnections?.length,
+        purchased: !!fromConnections?.length || item.style === 'portal',
         connections: fromConnections
       }
       const updatedGrid = updateItem(this.grid, fromRoom)
