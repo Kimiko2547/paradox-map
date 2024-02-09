@@ -1,7 +1,7 @@
 <template>
   <svg
     @click="toggleDarkMode"
-    style="height: 24px; width: 24px; margin: var(--spacing-100) var(--spacing-400)"
+    class="dark-toggle-button"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     fill="none"
@@ -38,3 +38,15 @@ const toggleDarkMode = () => {
 const isDarkMode = ref(get('isDarkMode'))
 isDarkMode.value ? enableDarkMode() : disableDarkMode()
 </script>
+<style scoped>
+.dark-toggle-button {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s;
+  margin: var(--spacing-100) var(--spacing-400);
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+</style>
