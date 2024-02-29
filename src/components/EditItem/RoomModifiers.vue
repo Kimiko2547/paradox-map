@@ -161,8 +161,10 @@ const canAdd = computed(() => {
   }
 
   .active {
-    color: white;
-    background: black;
+    color: black;
+    background: white;
+    border-color: white;
+    filter: grayscale(1) invert(1);
   }
 }
 

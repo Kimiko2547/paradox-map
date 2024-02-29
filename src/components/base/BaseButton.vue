@@ -17,12 +17,11 @@
   font-size: 0.875rem;
   font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.12s ease;
-  transition-property: background-color, color;
+  transition: 0.12s ease;
 
   &:hover {
-    background: black;
-    color: white;
+    border-color: white;
+    filter: grayscale(1) invert(1);
   }
 
   &:disabled {
@@ -30,6 +29,7 @@
     background: #ebebeb;
     color: #c5c5c5;
     border-color: #ebebeb;
+    filter: none;
   }
 }
 </style>
